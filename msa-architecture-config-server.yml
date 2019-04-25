@@ -1,0 +1,42 @@
+msaconfig:
+  greeting: "hello"
+  
+---
+
+spring:
+  profiles: local
+
+msaconfig:
+  greeting: "Hi~ local server... Good Afternoon..."
+
+---
+
+spring:
+  profiles: dev
+
+msaconfig:
+  greeting: "welcome to dev server!"
+
+---
+
+spring:
+  profiles: test
+  
+msaconfig:
+  greeting: "welcome to test server"
+
+---
+
+spring:
+  profiles: staging
+  
+msaconfig:
+  greeting: "welcome to staging server"
+
+---
+
+spring:
+  profiles: prod
+  
+msaconfig:
+  greeting: "1welcome to prod server!"
